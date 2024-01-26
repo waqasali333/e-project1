@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>metric converter temperature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <h3>Metric <span style="color: rgb(13, 114, 255); -webkit-text-stroke: 1px white;">Converter</span></h3>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="./home.html#parent">ABOUT</a></li>
+            <li><a href="chart.html">CHART</a></li>
+            <li><a href="./home.html#history">HISTORY</a></li>
+            <li><a href="./home.html#Articles">ARTICLES</a></li>
+            <li><a href="./home.html#FAQs">FAQs</a></li>
+        </ul>
+    </div>
+<br>
+    <div class="nav2">
+        <ul>
+            <li><a href="length.html">Length</a></li>
+            <li><a href="Area.html">Area</a></li>
+            <li><a href="Volume.html">Volume</a></li>
+            <li><a style="border-radius: 10px; background-color: transparent; color: black;
+                box-shadow: inset -3px -3px 7px rgb(203, 198, 198), inset 3px 3px 5px rgba(0, 0, 0, 0.676);" href="#">Temperature</a></li>
+            <li><a href="Mass.html">Mass</a></li>
+        </ul>
+    </div>
+    <br>
+        <div class="container">
+            <h1>Temperature Converter</h1>
+            <div class="inputcontainer">
+                <label for="celsius">Celsius <b>=</b></label>
+                <input type="number" id="celsius" oninput="convertToOthers('celsius',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="fahrenheit">Fahrenheit <b>=</b></label>
+                <input type="number" id="fahrenheit" oninput="convertToOthers('fahrenheit',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="kelvin">Kelvin <b>=</b></label>
+                <input type="number" id="kelvin" oninput="convertToOthers('kelvin',this.value)">
+            </div>
+        </div>
+        <br>
+        <div class="temp">
+            <p>Temperature is a fundamental aspect of our daily lives, and being able to convert between different
+            temperature units is essential for various applications. The most commonly used temperature scales are
+            Celsius (°C), Fahrenheit (°F), and Kelvin (K). Celsius is widely used in most countries, while Fahrenheit is
+            primarily used in the United States. Kelvin is commonly used in scientific and engineering fields.
+
+            Understanding temperature conversions is crucial for a wide range of applications, including weather
+            forecasting, cooking, scientific research, and industrial processes. Being able to convert between Celsius,
+            Fahrenheit, and Kelvin allows for effective communication and accurate measurements across different regions
+            and fields.</p>
+        </div>
+<br><br>
+    <div class="footer">
+        <p>© Copyright - 2024 Matric Converter. All Rights Reserved</p>
+    </div>
+    <script>
+        let celsius = document.getElementById("celsius")
+        let fahrenheit = document.getElementById("fahrenheit")
+        let kelvin = document.getElementById("kelvin")
+
+
+        function celsiusToOther(val) {
+            fahrenheit.value = (val * 9 / 5) + 32;
+            kelvin.value = val + 273.15;
+
+        }
+        function fahrenheitToOther(val) {
+            celsius.value = val - 32 * 5 / 9;
+            kelvin.value = val - 32 * 5 / 9 + 273.15;
+        }
+        function kelvinToOther(val) {
+            celsius.value = val - 273.15;
+            fahrenheit.value = (val - 273.15) * 9 / 5 + 32;
+        }
+
+        function convertToOthers(convertfrom, value) {
+            switch (convertfrom) {
+                case "celsius": celsiusToOther(parseFloat(value)); break;
+                case "fahrenheit": fahrenheitToOther(parseFloat(value)); break;
+                case "kelvin": kelvinToOther(parseFloat(value)); break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

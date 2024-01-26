@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>metric converter mass</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <h3>Metric <span style="color: rgb(13, 114, 255);-webkit-text-stroke: 1px white;">Converter</span></h3>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="./home.html#parent">ABOUT</a></li>
+            <li><a href="chart.html">CHART</a></li>
+            <li><a href="./home.html#history">HISTORY</a></li>
+            <li><a href="./home.html#Articles">ARTICLES</a></li>
+            <li><a href="./home.html#FAQs">FAQs</a></li>
+        </ul>
+    </div>
+<br>
+    <div class="nav2">
+        <ul>
+            <li><a href="length.html">Length</a></li>
+            <li><a href="Area.html">Area</a></li>
+            <li><a href="Volume.html">Volume</a></li>
+            <li><a href="temperature.html">Temperature</a></li>
+            <li><a style="border-radius: 10px; background-color: transparent; color: black;
+                box-shadow: inset -3px -3px 7px rgb(203, 198, 198), inset 3px 3px 5px rgba(0, 0, 0, 0.676);" href="#">Mass</a></li>
+        </ul>
+    </div>
+    <br>
+        <div class="container">
+            <h1>Mass Converter</h1>
+            <div class="inputcontainer">
+                <label for="tonne">Tonne <b>=</b></label>
+                <input type="number" id="tonne" oninput="convertToOthers('tonne',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="kilogram">Kilogram <b>=</b></label>
+                <input type="number" id="kilogram" oninput="convertToOthers('kilogram',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="gram">Gram <b>=</b></label>
+                <input type="number" id="gram" oninput="convertToOthers('gram',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="miligram">Miligram <b>=</b></label>
+                <input type="number" id="miligram" oninput="convertToOthers('miligram',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="microgram">Microgram <b>=</b></label>
+                <input type="number" id="microgram" oninput="convertToOthers('microgram',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="imperialton">Imperial Ton <b>=</b></label>
+                <input type="number" id="imperialton" oninput="convertToOthers('imperialton',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="uston">US Ton <b>=</b></label>
+                <input type="number" id="uston" oninput="convertToOthers('uston',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="stone">Stone <b>=</b></label>
+                <input type="number" id="stone" oninput="convertToOthers('stone',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="pound">Pound <b>=</b></label>
+                <input type="number" id="pound" oninput="convertToOthers('pound',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="ounce">Ounce <b>=</b></label>
+                <input type="number" id="ounce" oninput="convertToOthers('ounce',this.value)">
+            </div>
+        </div>
+        <br>
+        <div class="temp">
+            <p>The concept of mass conversion has evolved over centuries, shaped by the contributions of various
+                cultures and thinkers. Ancient civilizations, such as the Egyptians and Greeks, had rudimentary systems
+                for weighing objects. The Greek mathematician and scientist Archimedes played a crucial role in
+                developing the principles of buoyancy and density, which indirectly influenced the understanding of
+                mass.</p>
+        </div>
+        <br><br>
+    <div class="footer">
+        <p>© Copyright - 2024 Matric Converter. All Rights Reserved</p>
+    </div>
+    <script>
+        let tonne = document.getElementById("tonne")
+        let kilogram = document.getElementById("kilogram")
+        let gram = document.getElementById("gram")
+        let miligram = document.getElementById("miligram")
+        let microgram = document.getElementById("microgram")
+        let imperialton = document.getElementById("imperialton")
+        let uston = document.getElementById("uston")
+        let stone = document.getElementById("stone")
+        let pound = document.getElementById("pound")
+        let ounce = document.getElementById("ounce")
+
+        function tonneToOther(val) {
+            kilogram.value = val * 1000;
+            gram.value = val * 1e+6;
+            miligram.value = val * 1e+9;
+            microgram.value = val * 1e+12;
+            imperialton.value = val / 1.016;
+            uston.value = val / 1.102;
+            stone.value = val * 157.5;
+            pound.value = val * 2205;
+            ounce.value = val * 35270;
+        }
+        function kilogramToOther(val) {
+            tonne.value = val / 1000;
+            gram.value = val * 1000;
+            miligram.value = val * 1e+6;
+            microgram.value = val * 1e+9;
+            imperialton.value = val / 1016;
+            uston.value = val / 907.2;
+            stone.value = val / 6.35;
+            pound.value = val * 2.205;
+            ounce.value = val * 35.274;
+        }
+        function gramToOther(val) {
+            tonne.value = val / 1e+6;
+            kilogram.value = val / 1000;
+            miligram.value = val * 1000;
+            microgram.value = val * 1e+6;
+            imperialton.value = val / 1.016e+6;
+            uston.value = val / 907200;
+            stone.value = val / 6350;
+            pound.value = val / 453.6;
+            ounce.value = val / 28.35;
+        }
+        function miligramToOther(val) {
+            tonne.value = val / 1e+9;
+            kilogram.value = val / 1e+6;
+            gram.value = val / 1000;
+            microgram.value = val * 1000;
+            imperialton.value = val / 1.016e+9;
+            uston.value = val / 9.072e+8;
+            stone.value = val / 6.35e+6;
+            pound.value = val / 453600;
+            ounce.value = val / 28350;
+        }
+        function microgramToOther(val) {
+            tonne.value = val / 1e+12;
+            kilogram.value = val / 1e+9;
+            gram.value = val / 1e+6;
+            miligram.value = val / 1000;
+            imperialton.value = val / 1.016e+12;
+            uston.value = val / 9.072e+11;
+            stone.value = val / 6.35e+9;
+            pound.value = val / 4.536e+8;
+            ounce.value = val / 2.835e+7;
+
+        }
+        function imperialtonToOther(val) {
+            tonne.value = val * 1.016;
+            kilogram.value = val * 1016;
+            gram.value = val * 1.016e+6;
+            miligram.value = val * 1.016e+9;
+            microgram.value = val * 1.016e+12;
+            uston.value = val * 1.12;
+            stone.value = val * 160;
+            pound.value = val * 2240;
+            ounce.value = val * 35840;
+
+        }
+        function ustonToOther(val) {
+            tonne.value = val / 1.102;
+            kilogram.value = val * 907.2;
+            gram.value = val * 907200;
+            miligram.value = val * 9.072e+8;
+            microgram.value = val * 9.072e+11;
+            imperialton.value = val / 1.12;
+            stone.value = val * 142.9;
+            pound.value = val * 2000;
+            ounce.value = val * 32000;
+
+        }
+        function stoneToOther(val) {
+            tonne.value = val / 157.5;
+            kilogram.value = val * 6.35;
+            gram.value = val * 6350;
+            miligram.value = val * 6.35e+6;
+            microgram.value = val * 6.35e+9;
+            imperialton.value = val / 160;
+            uston.value = val / 142.9;
+            pound.value = val * 14;
+            ounce.value = val * 224;
+
+        }
+        function poundToOther(val) {
+            tonne.value = val / 2205;
+            kilogram.value = val / 2.205;
+            gram.value = val * 453.6;
+            miligram.value = val * 453600;
+            microgram.value = val * 4.536e+8;
+            imperialton.value = val / 2240;
+            uston.value = val / 2000;
+            stone.value = val / 14;
+            ounce.value = val * 16;
+        }
+        function ounceToOther(val) {
+            tonne.value = val / 35270;
+            kilogram.value = val / 35.274
+            gram.value = val * 28.35;
+            miligram.value = val * 28350;
+            microgram.value = val * 2.835e+7;
+            imperialton.value = val / 35840;
+            uston.value = val / 32000;
+            stone.value = val / 224;
+            pound.value = val / 16;
+
+        }
+
+        function convertToOthers(convertfrom, value) {
+            switch (convertfrom) {
+                case "tonne": tonneToOther(parseFloat(value)); break;
+                case "kilogram": kilogramToOther(parseFloat(value)); break;
+                case "gram": gramToOther(parseFloat(value)); break;
+                case "miligram": miligramToOther(parseFloat(value)); break;
+                case "microgram": microgramToOther(parseFloat(value)); break;
+                case "imperialton": imperialtonToOther(parseFloat(value)); break;
+                case "uston": ustonToOther(parseFloat(value)); break;
+                case "stone": stoneToOther(parseFloat(value)); break;
+                case "pound": poundToOther(parseFloat(value)); break;
+                case "ounce": ounceToOther(parseFloat(value)); break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

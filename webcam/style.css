@@ -1,0 +1,158 @@
+font-family: 'Roboto', sans-serif;
+
+
+*{
+    margin: 0%;
+    padding:0%;
+    box-sizing: border-box;
+    background-color: white;
+    text-decoration: none;
+}
+
+
+.wrapper{
+    position: relative;
+    padding: 0;
+    display: flex;
+}
+
+
+
+.logo{
+    font-size: 40px;
+    display: flex;
+}
+
+.navlink-items{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+  margin-left: 270px;  
+  cursor: pointer;
+}
+
+
+.item {
+    padding-left: 100px  ;
+    font-size: 16px;
+   color: rgba(204, 15, 15, 0.695) ;
+   
+}
+
+#safe{
+    color: rgba(43, 105, 219, 0.792);
+    font-weight: bold;
+    font-size: 100px;
+}
+
+#cam{
+    color: rgba(204, 15, 15, 0.695);
+    font-weight: bold;
+    font-size: 70px;
+}
+
+#phone{
+    background-color: rgba(204, 15, 15, 0.695);
+    
+}
+
+
+#phone {
+color: rgb(240, 238, 238);
+
+}
+
+
+.navlink-items :hover{
+color: rgba(43, 105, 219, 0.792)    ;
+}
+
+.navlink-items ::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    color:rgba(204, 15, 15, 0.695)   ;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+}
+
+
+    .navlink-items :hover ::after{
+        width: 100%;
+        color:rgba(43, 105, 219, 0.792) ;
+    }
+
+
+    #text1{
+       background-color: transparent;
+        color: whitesmoke;
+        text-align: center;
+        margin-top: 400px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    #text2{
+        background-color: transparent;
+        color: whitesmoke;
+        margin-top: 30px;
+        text-align: center;
+        font-size: 60px;
+        font-weight: bolder;
+    }
+
+    #text3{
+        background-color: transparent;
+        color: whitesmoke    ;
+margin-top: 30px;
+text-align: center;
+font-size: 60px;
+font-weight: bolder;
+
+    }
+
+    .image{
+        text-decoration: transparent;
+        padding: 12px;
+       
+        
+       
+      
+        background-image: url(/safe.jpg);
+      background-size: cover;
+      background-position: center; 
+      background-repeat: no-repeat;
+
+    }
+    
+      .btn{
+         justify-content: center;
+         display: flex;  
+         }
+
+      button{
+        justify-content: center;
+        margin-top: 200px;
+        margin-bottom: 20px;
+        padding: 10px;
+        font-size: 20px;
+      }
+
+      #contactus{
+        margin-left: 10px;
+        background-color: rgba(221, 54, 54, 0.695) ;
+        color: white;
+      }
+
+      #Get{
+        background-color:rgba(81, 43, 219, 0.792) ;
+        color: white;
+      }
+ 
+
+      #page a{
+        text-decoration: none;
+      }
+    

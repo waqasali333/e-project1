@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>jQuery UI Autocomplete - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="ui-widget">
+        <label for="tags">Tags:</label>
+        <input id="tags"></input>
+        <input id="tagss"></input>
+    </div>
+    <script>
+        $(document).ready(function(){
+            var search = [
+           "waqas",
+           "ali",
+           "nafees",
+           "muneeb",
+    ];
+    $("#tags").autocomplete({
+                source:search
+            })
+            
+        });
+        $(document).ready(function(){
+            var search = [
+          80,
+          90,
+          100,
+
+    ];
+});
+    
+  
+
+    
+
+                  
+
+              
+    </script>
+</body>
+
+</html>

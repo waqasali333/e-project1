@@ -1,0 +1,17 @@
+/* header div{width: 70px; ;height: 60px;
+background-color: black;
+overflow: hidden;
+}
+header div img{width: 70px;height: 60px;}
+header{width: 100%;height: 70px;
+background-color: brown;}
+header a{
+    color: black;
+    float: right;
+    padding: 12px;
+} */
+body{background-image:url(22.jpg);
+background-attachment: fixed;
+background-repeat: no-repeat;
+-moz-background-inline-policy:
+}

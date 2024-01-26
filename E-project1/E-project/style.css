@@ -1,0 +1,135 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.nav {
+    background-color: rgb(2, 2, 73);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+
+
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    margin: 0px 20px;
+    position: relative;
+}
+
+.nav h3 {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav a::after {
+    content: '';
+    left: 0%;
+    bottom: 0%;
+    height: 3px;
+    position: absolute;
+    width: 0%;
+    background-color: rgb(13, 114, 255);
+    transition: all ease-out 1s;
+    cursor: pointer;
+}
+
+.nav a:hover::after {
+    width: 100%;
+}
+
+.nav2 li a {
+    text-decoration: none;
+    font-size: 30px;
+    background-color: rgb(13, 114, 255);
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 8px;
+    transition: all ease-out 0.5s;
+    cursor: pointer;
+}
+
+.nav2 ul {
+    display: flex;
+    margin: 20px;
+    /* background-color: antiquewhite; */
+    justify-content: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+}
+
+.container {
+    box-shadow: 0 0 4px 1px rgb(0, 0, 0);
+    background-color: rgb(243, 247, 255);
+    width: 50%;
+    margin: 20px;
+    padding-bottom: 10px;
+    margin: auto;
+}
+
+.temp {
+    margin: auto;
+    padding: 10px;
+    box-shadow: -3px -3px 7px rgb(203, 198, 198), 3px 3px 5px rgba(0, 0, 0, 0.676);
+    border-radius: 10px;
+    width: 50%;
+    font-size: larger;
+}
+
+h1 {
+    text-align: center;
+    width: 100%;
+    background-color: rgb(13, 114, 255);
+    color: white;
+
+}
+
+.inputcontainer {
+
+    margin: 8px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+
+}
+
+.inputcontainer label {
+    font-size: x-large;
+}
+
+.inputcontainer input {
+    border: none;
+    outline: none;
+    box-shadow: inset -3px -3px 7px rgb(233, 231, 231), inset 3px 3px 5px rgba(0, 0, 0, 0.502);
+    padding: 4px;
+    font-size: large;
+    border-radius: 6px;
+
+}
+
+
+.footer {
+    background-color: rgb(2, 2, 73);
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    /* margin-top: 20px; */
+}

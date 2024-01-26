@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java </title>
+</head>
+<body>
+    <h1>Java Script Auntion And Dom</h1>
+    <h2>Dom Document Object Model</h2>
+
+    <p id="pa">Here is Some Rabon Text </p>
+    <div id="con"></div>
+
+    <button id="bt1" onclick=" fortext('this is called a function' )">Change Text</button>
+    <button id="bt2" onclick=" forcolor('aqua')" onmouseover="forcolor('red')" onmousedown="forcolor('blue')" onmouseleave="forcolor('white')"> Color</button>
+
+
+    <script>
+        function fortext(text){
+            document.getElementById("con").innerText = text;      
+        }
+
+        function forcolor(color) {
+            document.getElementById("bt2").style.backgroundColor = color;
+            
+        }
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="jadi.css">
+</head>
+<body>
+    <header>
+        <h1>E-commerce website</h1>
+    <button id="themetoggle">toogle theme</button>
+    </header>
+    <main>
+        <div class="product-card">
+            <img src="pic ecmce.jpg" alt="product 1">
+            <h2>product 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, minima facere explicabo voluptatem voluptates, incidunt sequi distinctio sapiente amet id animi, rerum voluptatum at dignissimos sed. Dicta vitae repellendus facilis.</p>
+            <button>add to cart</button>
+        </div>
+
+        <div class="product-card">
+            <img src="ecmrce.png" alt="product 2">
+            <h2>product 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dicta, minus quam temporibus, provident fugiat consequatur repellendus quod perspiciatis quibusdam error soluta laborum ea id tempore? Nostrum nihil magnam voluptate.</p>
+            <button>add to cart</button>
+        </div>
+    </main>
+
+    <script>
+        const themeToggleBtn =document.getElementById('themetoggle');
+        const body=document.body;
+
+        themeToggleBtn.addEventListener('click',() => {
+            body.classList.toggle('dark-theme');
+        });
+    </script>
+</body>
+</html>

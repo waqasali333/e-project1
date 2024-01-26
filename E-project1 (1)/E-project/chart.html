@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .nav {
+        /* background-color: green; */
+        background-color: rgb(2, 2, 73);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+
+    }
+
+    .nav h3 {
+        color: white;
+        font-size: 40px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        /* text-decoration: underline;
+       text-decoration-thickness: 3;
+       text-decoration-color: linear-gradient( blue ); */
+    }
+
+    .nav li a {
+        text-decoration: none;
+        color: white;
+        font-size: x-large;
+        margin: 0px 20px;
+        position: relative;
+    }
+
+    .nav ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .nav a::after {
+        content: '';
+        left: 0%;
+        bottom: 0%;
+        height: 3px;
+        position: absolute;
+        width: 0%;
+        background-color: rgb(13, 114, 255);
+        transition: all ease-out 1s;
+        cursor: pointer;
+    }
+
+    .nav a:hover::after {
+        width: 100%;
+    }
+
+    .parent {
+        margin: auto;
+        margin-bottom: 20px;
+        width: 70%;
+        text-align: center;
+        background-color: rgb(243, 247, 255);
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        border: 2px solid black;
+    }
+
+    .parent h1 {
+        text-align: center;
+        margin-top: 15px;
+
+    }
+
+    .parent h2 {
+        text-align: center;
+        font-size: xx-large;
+        /* margin: 20px; */
+        background-color: rgb(5, 84, 195);
+        padding: 6px;
+        color: white;
+        width: 100%;
+    }
+
+
+    .input {
+        border-radius: 4px;
+        padding: 4px;
+        margin: 2px;
+        border: 2px solid black;
+        width: 35%;
+
+    }
+
+    .input input {
+        box-shadow: inset -3px -3px 7px rgb(233, 231, 231), inset 3px 3px 5px rgba(0, 0, 0, 0.502);
+        padding: 4px;
+        cursor: pointer;
+        /* margin: 10px; */
+        font-size: 15px;
+        text-align: center;
+        border-radius: 6px;
+        outline: none;
+        border: none;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    .footer {
+        background-color: rgb(2, 2, 73);
+        padding: 20px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        /* margin-top: 20px; */
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <h3>Metric <span style="color: rgb(13, 114, 255); -webkit-text-stroke: 1px white;">Converter</span></h3>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="./home.html#parent">ABOUT</a></li>
+            <li><a href="chart.html">CHART</a></li>
+            <li><a href="./home.html#history">HISTORY</a></li>
+            <li><a href="./home.html#Articles">ARTICLES</a></li>
+            <li><a href="./home.html#FAQs">FAQs</a></li>
+        </ul>
+    </div>
+    <br>
+    <div class="parent">
+        <h2>Length Conversion</h2>
+        <div class="input">
+            <label for="">Feet</label><br>
+            <input type="number" value="0" id="feet">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Meters</label><br>
+            <input type="number" value="0" id="meter">
+        </div>
+        <div class="input">
+            <label for="">Inches</label><br>
+            <input type="number" value="0" id="inch">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Milimeters</label><br>
+            <input type="number" value="0" id="Mm">
+        </div>
+
+        <div class="input">
+            <label for="">Yards</label><br>
+            <input type="number" value="0" id="yard">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Meters</label><br>
+            <input type="number" value="0" id="Meter">
+        </div>
+
+        <div class="input">
+            <label for="">Miles</label><br>
+            <input type="number" value="0" id="miles">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Kilometers</label><br>
+            <input type="number" value="0" id="Km">
+        </div>
+
+        <h2>Area Conversion</h2>
+        <div class="input">
+            <label for="">Square inches</label><br>
+            <input type="number" value="0" id="Square inches">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Square milimeters</label><br>
+            <input type="number" value="0" id="Square milimeters">
+        </div>
+        <div class="input">
+            <label for="">Square feet</label><br>
+            <input type="number" value="0" id="Square feet">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Square meters</label><br>
+            <input type="number" value="0" id="Square meters">
+        </div>
+
+        <div class="input">
+            <label for="">Square yards</label><br>
+            <input type="number" value="0" id="Square yard">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Square meters</label><br>
+            <input type="number" value="0" id="Square meter">
+        </div>
+
+        <div class="input">
+            <label for="">Acres</label><br>
+            <input type="number" value="0" id="Acres">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Hectares</label><br>
+            <input type="number" value="0" id="Hectares">
+        </div>
+
+        <div class="input">
+            <label for="">Square miles</label><br>
+            <input type="number" value="0" id="Square miles">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Square Kilometers</label><br>
+            <input type="number" value="0" id="Square Kilometers">
+        </div>
+
+        <h2>Volume Conversion</h2>
+        <div class="input">
+            <label for="">Fluid ounces</label><br>
+            <input type="number" value="0" id="Fluid ounces">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Mililiters</label><br>
+            <input type="number" value="0" id="Mililiters">
+        </div>
+        <div class="input">
+            <label for="">Gallons</label><br>
+            <input type="number" value="0" id="Gallons">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Liters</label><br>
+            <input type="number" value="0" id="Liters">
+        </div>
+
+        <div class="input">
+            <label for="">Cubic feet</label><br>
+            <input type="number" value="0" id="Cubic feet">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Cubic meters</label><br>
+            <input type="number" value="0" id="Cubic meter">
+        </div>
+
+        <div class="input">
+            <label for="">Cubic yards</label><br>
+            <input type="number" value="0" id="Cubic yards">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Cubic meters</label><br>
+            <input type="number" value="0" id="Cubic meters">
+        </div>
+
+        <h2>Mass Conversion</h2>
+        <div class="input">
+            <label for="">Ounces</label><br>
+            <input type="number" value="0" id="Ounces">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Grams</label><br>
+            <input type="number" value="0" id="Grams">
+        </div>
+
+        <div class="input">
+            <label for="">Pounds</label><br>
+            <input type="number" value="0" id="Pounds">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Kilograms</label><br>
+            <input type="number" value="0" id="Kilograms">
+        </div>
+
+        <h2>Temperature Conversion</h2>
+        <div class="input">
+            <label for="">Celsius</label><br>
+            <input type="number" value="0" id="Celsius">
+        </div>
+        <h1>=</h1>
+        <div class="input">
+            <label for="">Fahrenheit</label><br>
+            <input type="number" value="0" id="Fahrenheit">
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>© Copyright - 2024 Matric Converter. All Rights Reserved</p>
+    </div>
+</body>
+<script>
+    // LENGTH CONVERSION
+    var feet = document.getElementById('feet');
+    var meter = document.getElementById('meter');
+    feet.addEventListener('input', function () {
+        var f = this.value;
+        var m = f * 0.3048;
+        meter.value = m;
+    })
+
+    meter.addEventListener('input', function () {
+        var m = this.value;
+        var f = m * 3.28084;
+        feet.value = f;
+    })
+
+    var inch = document.getElementById('inch');
+    var milimeter = document.getElementById('Mm');
+    inch.addEventListener('input', function () {
+        var i = this.value;
+        var mm = i * 25.4;
+        milimeter.value = mm;
+    })
+    milimeter.addEventListener('input', function () {
+        var mm = this.value;
+        var i = mm * 0.0393701;
+        inch.value = i;
+    })
+
+    var yard = document.getElementById('yard');
+    var meters = document.getElementById('Meter');
+    yard.addEventListener('input', function () {
+        var y = this.value;
+        var M = y * 0.9144;
+        meters.value = M;
+    })
+    meters.addEventListener('input', function () {
+        var M = this.value;
+        var y = M * 1.09361;
+        yard.value = y;
+    })
+
+    var miles = document.getElementById('miles');
+    var Kilometers = document.getElementById('Km');
+    miles.addEventListener('input', function () {
+        var mile = this.value;
+        var km = mile * 1.60934;
+        Kilometers.value = km;
+    })
+    Kilometers.addEventListener('input', function () {
+        var Km = this.value;
+        var mile = Km * 0.621371;
+        miles.value = mile;
+    })
+
+    // area conversion
+    var Squareinches = document.getElementById('Square inches');
+    var Squaremilimeters = document.getElementById('Square milimeters');
+    Squareinches.addEventListener('input', function () {
+        var Si = this.value;
+        var Smm = Si * 645.2;
+        Squaremilimeters.value = Smm;
+    })
+    Squaremilimeters.addEventListener('input', function () {
+        var Smm = this.value;
+        var Si = Smm / 645.2;
+        Squareinches.value = Si;
+    })
+
+    var Squarefeet = document.getElementById('Square feet');
+    var Squaremeters = document.getElementById('Square meters');
+    Squarefeet.addEventListener('input', function () {
+        var Sf = this.value;
+        var Sm = Sf / 10.764;
+        Squaremeters.value = Sm;
+    })
+    Squaremeters.addEventListener('input', function () {
+        var Sm = this.value;
+        var Sf = Sm * 10.764;
+        Squarefeet.value = Sf;
+    })
+
+    var Squareyards = document.getElementById('Square yard');
+    var Squaremeter = document.getElementById('Square meter');
+    Squareyards.addEventListener('input', function () {
+        var Sy = this.value;
+        var Sme = Sy / 1.196;
+        Squaremeter.value = Sme;
+    })
+    Squaremeter.addEventListener('input', function () {
+        var Sme = this.value;
+        var Sy = Sme * 1.196;
+        Squareyards.value = Sy;
+    })
+
+    var Acres = document.getElementById('Acres');
+    var Hectares = document.getElementById('Hectares');
+    Acres.addEventListener('input', function () {
+        var Ac = this.value;
+        var He = Ac / 2.471;
+        Hectares.value = He;
+    })
+    Hectares.addEventListener('input', function () {
+        var He = this.value;
+        var Ac = He * 2.471;
+        Acres.value = Ac;
+    })
+
+    var Squaremiles = document.getElementById('Square miles');
+    var SquareKilometers = document.getElementById('Square Kilometers');
+    Squaremiles.addEventListener('input', function () {
+        var Smile = this.value;
+        var Ski = Smile * 2.59;
+        SquareKilometers.value = Ski;
+    })
+    SquareKilometers.addEventListener('input', function () {
+        var Ski = this.value;
+        var Smile = Ski / 2.59;
+        Squaremiles.value = Smile;
+    })
+
+    // VOLUME CONVERSION
+    var Fluidounces = document.getElementById('Fluid ounces');
+    var Mililiters = document.getElementById('Mililiters');
+    Fluidounces.addEventListener('input', function () {
+        var F = this.value;
+        var mili = F * 2.59;
+        Mililiters.value = mili;
+    })
+    Mililiters.addEventListener('input', function () {
+        var mili = this.value;
+        var F = mili / 2.59;
+        Fluidounces.value = F;
+    })
+
+    var Gallons = document.getElementById('Gallons');
+    var Liters = document.getElementById('Liters');
+    Gallons.addEventListener('input', function () {
+        var G = this.value;
+        var L = G * 2.59;
+        Liters.value = L;
+    })
+    Liters.addEventListener('input', function () {
+        var L = this.value;
+        var G = L / 2.59;
+        Gallons.value = G;
+    })
+
+    var Cubicfeet = document.getElementById('Cubic feet');
+    var Cubicmeter = document.getElementById('Cubic meter');
+    Cubicfeet.addEventListener('input', function () {
+        var Qf = this.value;
+        var Qm = Qf * 2.59;
+        Cubicmeter.value = Qm;
+    })
+    Cubicmeter.addEventListener('input', function () {
+        var Qm = this.value;
+        var Qf = Qm / 2.59;
+        Cubicfeet.value = Qf;
+    })
+
+    var Cubicyards = document.getElementById('Cubic yards');
+    var Cubicmeters = document.getElementById('Cubic meters');
+    Cubicyards.addEventListener('input', function () {
+        var Qy = this.value;
+        var qm = Qy * 2.59;
+        Cubicmeters.value = qm;
+    })
+    Cubicmeters.addEventListener('input', function () {
+        var qm = this.value;
+        var Qy = qm / 2.59;
+        Cubicyards.value = Qy;
+    })
+
+    // MASS CONVERSION
+    var Ounces = document.getElementById('Ounces');
+    var Grams = document.getElementById('Grams');
+    Ounces.addEventListener('input', function () {
+        var O = this.value;
+        var Gra = O * 2.59;
+        Grams.value = Gra;
+    })
+    Grams.addEventListener('input', function () {
+        var Gra = this.value;
+        var O = Gra / 2.59;
+        Ounces.value = O;
+    })
+
+    var Pounds = document.getElementById('Pounds');
+    var Kilograms = document.getElementById('Kilograms');
+    Pounds.addEventListener('input', function () {
+        var P = this.value;
+        var Kgm = P * 2.59;
+        Kilograms.value = Kgm;
+    })
+    Kilograms.addEventListener('input', function () {
+        var Kgm = this.value;
+        var P = Kgm / 2.59;
+        Pounds.value = P;
+    })
+
+    // TEMPERATUE CONVERSION
+    var Celsius = document.getElementById('Celsius');
+    var Fahrenheit = document.getElementById('Fahrenheit');
+    Celsius.addEventListener('input', function () {
+        var Qy = this.value;
+        var qm = (Qy * 9 / 5) + 32;
+        Fahrenheit.value = qm;
+    })
+    Fahrenheit.addEventListener('input', function () {
+        var qm = this.value;
+        var Qy = (qm - 32) * 5 / 9;
+        Celsius.value = Qy;
+    })
+
+</script>
+
+</html>

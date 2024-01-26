@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nevbar.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+       <h1>logo </h1>
+        <img src="img.png" alt="" id="menu" onclick="Navigetion()">
+
+        <nav>
+            <ul>
+                <a href="">
+                    <li>Home</li>
+                </a><a href="">
+                    <li>About</li>
+                </a><a href="">
+                    <li>Contact</li>
+                </a><a href="">
+                    <li><button>login</button></li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <div id="responsivNav" class="respnav">
+            <ul id="responul">
+                <a href="">
+                    <li class="responli">Home</li>
+                </a><a href="">
+                    <li class="responli">About</li>
+                </a><a href="">
+                    <li class="responli">Contact</li>
+                </a><a href="">
+                    <li class="responli"><button>login</button></li>
+                </a>
+            </ul>
+    </div>
+
+
+
+    <script>
+        function Navigetion(){
+            document.getElementById("responsivNav").classList.toggle("respnav2")
+        }
+    </script>
+</body>
+</html>

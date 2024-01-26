@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment & pseudo selectors</title>
+</head>
+<style>
+ *{
+    padding: 0;
+    margin: 0;
+ }
+ #heading{
+    margin: auto;
+    width: 303px;
+ }
+
+ .container{
+    border: 4px solid greenyellow;
+    background-color: rgba(255, 235, 205, 0.568);
+    margin: auto;
+    width: 60%;
+    margin-top: 15px ;
+    padding: 20px;
+    overflow: auto;
+ }
+
+ .items{
+    border: 4px solid yellow;
+    background-color: burlywood;
+    margin: 10px;
+    padding: 10px; 
+}
+#Fruits{
+float: left;
+width: 45%;
+}
+#Stationary{
+float: right;
+width: 45%;
+}
+#Notebooks{
+    clear: both;
+}
+.btn{
+    background-color: white;
+    border: 2px solid brown;
+    border-radius: 5px;
+    padding: 2px;
+}
+.btn a{
+    text-decoration: none;
+    color: black;
+    
+}
+#readmore:hover{
+    background-color: brown;
+
+}
+a:hover{
+    color: white;
+}
+#signup:hover{
+    background-color: brown;
+    color: white;
+}
+</style>
+
+<body>
+
+<div class="container">
+    <h1 id="heading">GROCERY STORE</h1>
+    <div class="button">
+        <button class="btn" id="readmore"><a href="#">Read more</a></button>
+        <button class="btn" id="signup">Sign Up</button>
+    </div>
+    <div id="Fruits" class="items">
+        <h3>Fruits</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima repudiandae magnam incidunt iusto consectetur nihil sint perferendis minus. Nulla, omnis aperiam quod aliquid, ea fugiat atque possimus et sit quasi beatae voluptates repellendus, velit qui accusantium eum asperiores numquam consectetur dolore. Ea asperiores praesentium fugiat odit tempora, repudiandae omnis corporis mollitia, assumenda sint repellat atque excepturi. Id eligendi iure sed? Nostrum ducimus nobis aperiam, minus fugiat ex obcaecati possimus quidem magni accusamus distinctio architecto unde, id incidunt. Alias, non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, consequatur ad. Laboriosam consequuntur ipsum quam, magni officiis voluptas dolores atque aperiam cumque molestiae? Cum deserunt hic a sunt ab praesentium quia! Iste deleniti facilis similique dignissimos odio. Nam, voluptate ad. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque voluptas aliquid doloribus autem officiis dolorem voluptates magnam a totam nesciunt, iure ipsam ad hic quos? Eum iusto deserunt alias nulla accusamus quidem nihil. Eius doloremque id, quod architecto totam aliquid illo aut officia voluptatem suscipit in consectetur repellat! Sit, ea commodi tenetur debitis quia iusto magnam illo libero dicta facilis numquam aspernatur repellat eaque aliquid eius veniam natus! Voluptatum fuga maxime dolor temporibus eum, assumenda iste distinctio atque facere! Quibusdam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, aspernatur quo a quasi nemo asperiores quaerat cum est labore repellat quam consectetur debitis enim iusto modi rerum amet, molestias quis, necessitatibus exercitationem placeat ex accusantium dolore quidem! Modi accusamus temporibus dolor ad, minus, repellendus architecto iste dolorem quibusdam praesentium aperiam. </p>
+    </div>
+    <div id="Stationary" class="items">
+        <h3>Stationary</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima repudiandae magnam incidunt iusto consectetur nihil sint perferendis minus. Nulla, omnis aperiam quod aliquid, ea fugiat atque possimus et sit quasi beatae voluptates repellendus, velit qui accusantium eum asperiores numquam consectetur dolore. Ea asperiores praesentium fugiat odit tempora, repudiandae omnis corporis mollitia, assumenda sint repellat atque excepturi. Id eligendi iure sed? Nostrum ducimus nobis aperiam, minus fugiat ex obcaecati possimus quidem magni accusamus distinctio architecto unde, id incidunt. Alias, non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tempora vel quasi repudiandae, doloribus quas molestias cupiditate laborum dolores nisi odit tenetur accusamus consectetur eaque similique iusto modi voluptatibus iste ad porro tempore! Cum doloremque a culpa nihil deleniti quod ad aut ut incidunt sit. Cupiditate omnis unde deleniti reiciendis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque reiciendis quidem necessitatibus deleniti voluptate laudantium a nostrum sequi animi culpa itaque eos error suscipit, fuga reprehenderit dolorem et consequatur asperiores, laboriosam aspernatur facilis officia nesciunt. Maxime incidunt eos qui aliquam voluptatem nemo. Omnis eveniet optio quidem maxime illum non alias corrupti in asperiores magni incidunt, neque iusto saepe velit nihil reprehenderit voluptatibus labore tempore ipsam odio minus deleniti magnam! Assumenda distinctio excepturi, rem vero maxime odio molestias voluptatem quas impedit!</p>
+    </div>
+    <div id="Notebooks" class="items">
+        <h3>Notebooks</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda minima repudiandae magnam incidunt iusto consectetur nihil sint perferendis minus. Nulla, omnis aperiam quod aliquid, ea fugiat atque possimus et sit quasi beatae voluptates repellendus, velit qui accusantium eum asperiores numquam consectetur dolore. Ea asperiores praesentium fugiat odit tempora, repudiandae omnis corporis mollitia, assumenda sint repellat atque excepturi. Id eligendi iure sed? Nostrum ducimus nobis aperiam, minus fugiat ex obcaecati possimus quidem magni accusamus distinctio architecto unde, id incidunt. Alias, non.</p>
+    </div>
+   
+</div>
+   
+</body>
+
+</html>

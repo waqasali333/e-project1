@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>the window object</h1>
+    <h2>the settimeout() method</h2>
+    <p>the input field will tell you when two, four, and six seconds have passed</p>
+    <input type="text" id="txt">
+
+    <script>
+        let x = document.getElementById("txt");
+        setTimeout(function(){ x.value="2 seconds"}, 2000);
+        setTimeout(function(){ x.value="4 seconds"}, 4000);
+        setTimeout(function(){ x.value="6 seconds"}, 6000);
+    </script>
+</body>
+</html>

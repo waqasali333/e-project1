@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <h3>Metric <span style="color: rgb(13, 114, 255);-webkit-text-stroke: 1px white;">Converter</span></h3>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="./home.html#parent">ABOUT</a></li>
+            <li><a href="chart.html">CHART</a></li>
+            <li><a href="./home.html#history">HISTORY</a></li>
+            <li><a href="./home.html#Articles">ARTICLES</a></li>
+            <li><a href="./home.html#FAQs">FAQs</a></li>
+        </ul>
+    </div>
+<br>
+    <div class="nav2">
+        <ul>
+            <li><a href="length.html">Length</a></li>
+            <li><a style="border-radius: 10px; background-color: transparent; color: black;
+                box-shadow: inset -3px -3px 7px rgb(203, 198, 198), inset 3px 3px 5px rgba(0, 0, 0, 0.676);" href="#">Area</a></li>
+            <li><a href="Volume.html">Volume</a></li>
+            <li><a href="temperature.html">Temperature</a></li>
+            <li><a href="Mass.html">Mass</a></li>
+        </ul>
+    </div>
+    <br>
+        <div class="container">
+            <h1>Area Converter</h1>
+            <div class="inputcontainer">
+                <label for="squaremeter">Square Meter <b>=</b></label>
+                <input type="number" id="squaremeter" oninput="convertToOthers('squaremeter',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="squaremile">Square Mile <b>=</b></label>
+                <input type="number" id="squaremile" oninput="convertToOthers('squaremile',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="squareyard">Square Yard <b>=</b></label>
+                <input type="number" id="squareyard" oninput="convertToOthers('squareyard',this.value)">
+            </div>
+
+            <div class="inputcontainer">
+                <label for="squarefoot">Square Foot <b>=</b></label>
+                <input type="number" id="squarefoot" oninput="convertToOthers('squarefoot',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="squareinch">Square Inch <b>=</b></label>
+                <input type="number" id="squareinch" oninput="convertToOthers('squareinch',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="hectare">Hectare <b>=</b></label>
+                <input type="number" id="hectare" oninput="convertToOthers('hectare',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="acre">Acre <b>=</b></label>
+                <input type="number" id="acre" oninput="convertToOthers('acre',this.value)">
+            </div>
+        </div>
+        <br>
+        <div class="temp">
+            <p>Metric measurements of area are widely used around the world due to their simplicity and consistency. The
+                metric system employs the square meter (m²) as the base unit for measuring area. This unit is derived
+                from the meter, which is the base unit for measuring length. The square meter represents the area of a
+                square with sides measuring one meter.
+
+                For larger areas, metric prefixes are used to indicate multiples or fractions of the square meter. For
+                example, the hectare (ha) is commonly used to measure land areas. One hectare is equal to 10,000 square
+                meters, or 100 meters by 100 meters. This unit is often used in agriculture and urban planning.
+
+                For smaller areas, the square meter can be divided into smaller units using metric prefixes. The most
+                commonly used subunits are square centimeters (cm²) which is equal to a ten thousandth of a square
+                meter, and square millimeters (mm²) which is one millionth. These units are often used in scientific and
+                engineering applications where precise measurements are required.</p>
+        </div>
+        <br><br>
+    <div class="footer">
+        <p>© Copyright - 2024 Matric Converter. All Rights Reserved</p>
+    </div>
+    <script>
+
+        let squaremeter = document.getElementById("squaremeter")
+        let squaremile = document.getElementById("squaremile")
+        let squareyard = document.getElementById("squareyard")
+        let squarefoot = document.getElementById("squarefoot")
+        let squareinch = document.getElementById("squareinch")
+        let hectare = document.getElementById("hectare")
+        let acre = document.getElementById("acre")
+
+
+        function squaremeterToOther(val) {
+
+            squaremile.value = val / 2.59e+6;
+            squareyard.value = val * 1.196;
+            squarefoot.value = val * 10.764;
+            squareinch.value = val * 1550;
+            hectare.value = val / 10000;
+            acre.value = val / 4047;
+
+        }
+        function squaremileToOther(val) {
+
+            squaremeter.value = val * 2.59e+6;
+            squareyard.value = val * 3.098e+6;
+            squarefoot.value = val * 2.788e+7;
+            squareinch.value = val * 4.014e+9;
+            hectare.value = val * 259;
+            acre.value = val * 640;
+        }
+        function squareyardToOther(val) {
+
+            squaremeter.value = val / 1.196;
+            squaremile.value = val / 3.098e+6;
+            squarefoot.value = val * 9;
+            squareinch.value = val * 1296;
+            hectare.value = val / 11960;
+            acre.value = val / 4840;
+        }
+
+        function squarefootToOther(val) {
+
+            squaremeter.value = val / 10.764;
+            squaremile.value = val / 2.788e+7;
+            squareyard.value = val / 9;
+            squareinch.value = val * 144;
+            hectare.value = val / 107600;
+            acre.value = val / 43560;
+        }
+        function squareinchToOther(val) {
+
+            squaremeter.value = val / 10.764;
+            squaremile.value = val / 2.788e+7;
+            squareyard.value = val / 9;
+            squarefoot.value = val / 144;
+            hectare.value = val / 107600;
+            acre.value = val / 43560;
+
+        }
+        function hectareToOther(val) {
+
+            squaremeter.value = val * 10000;
+            squaremile.value = val / 259;
+            squareyard.value = val * 11960;
+            squarefoot.value = val * 107600;
+            squareinch.value = val * 1.55e+7;
+            acre.value = val * 2.471;
+
+        }
+        function acreToOther(val) {
+
+            squaremeter.value = val * 4047;
+            squaremile.value = val / 640;
+            squareyard.value = val * 4840;
+            squarefoot.value = val * 43560;
+            squareinch.value = val * 6.273e+6;
+            hectare.value = val / 2.471;
+
+        }
+        function convertToOthers(convertfrom, value) {
+            switch (convertfrom) {
+
+                case "squaremeter": squaremeterToOther(parseFloat(value)); break;
+                case "squaremile": squaremileToOther(parseFloat(value)); break;
+                case "squareyard": squareyardToOther(parseFloat(value)); break;
+                case "squarefoot": squarefootToOther(parseFloat(value)); break;
+                case "squareinch": squareinchToOther(parseFloat(value)); break;
+                case "hectare": hectareToOther(parseFloat(value)); break;
+                case "acre": acreToOther(parseFloat(value)); break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

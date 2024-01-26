@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>metric converter volume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="nav">
+        <h3>Metric <span style="color: rgb(13, 114, 255);-webkit-text-stroke: 1px white;">Converter</span></h3>
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="./home.html#parent">ABOUT</a></li>
+            <li><a href="chart.html">CHART</a></li>
+            <li><a href="./home.html#history">HISTORY</a></li>
+            <li><a href="./home.html#Articles">ARTICLES</a></li>
+            <li><a href="./home.html#FAQs">FAQs</a></li>
+        </ul>
+    </div>
+<br>
+    <div class="nav2">
+        <ul>
+            <li><a href="length.html">Length</a></li>
+            <li><a href="Area.html">Area</a></li>
+            <li><a style="border-radius: 10px; background-color: transparent; color: black;
+                box-shadow: inset -3px -3px 7px rgb(203, 198, 198), inset 3px 3px 5px rgba(0, 0, 0, 0.676);" href="#">Volume</a></li>
+            <li><a href="temperature.html">Temperature</a></li>
+            <li><a href="Mass.html">Mass</a></li>
+        </ul>
+    </div>
+    <br>
+        <div class="container">
+            <h1>Volume Converter</h1>
+            <div class="inputcontainer">
+                <label for="usliquidgallon">Us Liquidgallon <b>=</b> </label>
+                <input type="number" id="usliquidgallon" oninput="convertToOthers('usliquidgallon',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="usliquidquart">Us Liquidquart <b>=</b></label>
+                <input type="number" id="usliquidquart" oninput="convertToOthers('usliquidquart',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="usliquidpint">Us Liquidpint <b>=</b></label>
+                <input type="number" id="usliquidpint" oninput="convertToOthers('usliquidpint',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="uslegalcup">Us Legalcup <b>=</b></label>
+                <input type="number" id="uslegalcup" oninput="convertToOthers('uslegalcup',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="fluidounce">Fluid Ounce <b>=</b></label>
+                <input type="number" id="fluidounce" oninput="convertToOthers('fluidounce',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="cubicmeter">Cubic Meter <b>=</b></label>
+                <input type="number" id="cubicmeter" oninput="convertToOthers('cubicmeter',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="cubicfoot">Cubic foot <b>=</b></label>
+                <input type="number" id="cubicfoot" oninput="convertToOthers('cubicfoot',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="cubicinch">Cubic Inch <b>=</b></label>
+                <input type="number" id="cubicinch" oninput="convertToOthers('cubicinch',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="liter">Liter <b>=</b></label>
+                <input type="number" id="liter" oninput="convertToOthers('liter',this.value)">
+            </div>
+            <div class="inputcontainer">
+                <label for="milliliter">Milli Liter <b>=</b></label>
+                <input type="number" id="milliliter" oninput="convertToOthers('milliliter',this.value)">
+            </div>
+        </div>
+        <br>
+        <div class="temp">
+            <p>The concept of volume conversion has ancient origins, rooted in the mathematical and practical needs of
+                different civilizations. Ancient cultures, such as the Egyptians, Greeks, and Romans, developed methods
+                for measuring volumes of containers and geometric shapes. The Greek mathematician Archimedes (circa
+                287-212 BCE) made significant contributions to the understanding of volume, famously discovering the
+                principle of displacement while taking a bath.</p>
+        </div>
+        <br><br>
+    <div class="footer">
+        <p>© Copyright - 2024 Matric Converter. All Rights Reserved</p>
+    </div>
+    <script>
+        let usliquidgallon = document.getElementById("usliquidgallon")
+        let usliquidquart = document.getElementById("usliquidquart")
+        let usliquidpint = document.getElementById("usliquidpint")
+        let uslegalcup = document.getElementById("uslegalcup")
+        let fluidounce = document.getElementById("fluidounce")
+        let cubicmeter = document.getElementById("cubicmeter")
+        let cubicfoot = document.getElementById("cubicfoot")
+        let cubicinch = document.getElementById("cubicinch")
+        let liter = document.getElementById("liter")
+        let milliliter = document.getElementById("milliliter")
+
+
+        function usliquidgallonToOther(val) {
+            usliquidquart.value = val / 4;
+            usliquidpint.value = val * 8;
+            uslegalcup.value = val * 15.773;
+            fluidounce.value = val * 128;
+            cubicmeter.value = val / 264.2;
+            liter.value = val * 3.785;
+            milliliter.value = val * 3785;
+            cubicfoot.value = val / 7.48;
+            cubicinch.value = val * 231;
+        }
+        function usliquidquartToOther(val) {
+            usliquidgallon.value = val / 4;
+            usliquidpint.value = val * 2;
+            uslegalcup.value = val * 3.943;
+            fluidounce.value = val * 32;
+            cubicmeter.value = val / 1057;
+            liter.value = val / 1.057;
+            milliliter.value = val * 946.4;
+            cubicfoot.value = val / 29.922;
+            cubicinch.value = val * 57.75;
+        }
+        function usliquidpintToOther(val) {
+            usliquidgallon.value = val / 8;
+            usliquidquart.value = val / 2;
+            uslegalcup.value = val * 1.972;
+            fluidounce.value = val * 16;
+            cubicmeter.value = val / 2113;
+            liter.value = val / 2.113;
+            milliliter.value = val * 473.2;
+            cubicfoot.value = val / 59.844;
+            cubicinch.value = val * 28.875;
+        }
+        function uslegalcupToOther(val) {
+            usliquidgallon.value = val / 15.772;
+            usliquidquart.value = val / 3.943;
+            usliquidpint.value = val / 1.972;
+            fluidounce.value = val * 8.115;
+            cubicmeter.value = val / 4167;
+            liter.value = val / 4.167;
+            milliliter.value = val * 240;
+            cubicfoot.value = val / 118;
+            cubicinch.value = val * 14.646;
+        }
+        function fluidounceToOther(val) {
+            usliquidgallon.value = val / 15.772;
+            usliquidquart.value = val / 3.943;
+            usliquidpint.value = val / 1.972;
+            uslegalcup.value = val / 29.574;
+            cubicmeter.value = val * 33810;
+            cubicfoot.value = val / 957.5;
+            cubicinch.value = val * 1.805;
+            liter.value = val / 33.814;
+            milliliter.value = val * 29.574;
+        }
+        function cubicmeterToOther(val) {
+            usliquidgallon.value = val * 264.2;
+            usliquidquart.value = val * 1057;
+            usliquidpint.value = val * 2113;
+            uslegalcup.value = val * 4167;
+            fluidounce.value = val * 33810;
+            cubicfoot.value = val * 35.315;
+            cubicinch.value = val * 61020;
+            liter.value = val * 1000;
+            milliliter.value = val * 1e+6;
+        }
+        function cubicfootToOther(val) {
+            usliquidgallon.value = val * 7.481;
+            usliquidquart.value = val * 29.922;
+            usliquidpint.value = val * 59.844;
+            uslegalcup.value = val * 118;
+            fluidounce.value = val * 957.5;
+            cubicmeter.value = val / 35.315;
+            cubicinch.value = val * 1728;
+            liter.value = val * 28.317;
+            milliliter.value = val * 28320;
+
+        }
+        function cubicinchToOther(val) {
+            usliquidgallon.value = val / 231;
+            usliquidquart.value = val / 57.75;
+            usliquidpint.value = val / 28.875;
+            uslegalcup.value = val / 14.646;
+            fluidounce.value = val / 1.805;
+            cubicmeter.value = val / 61020;
+            cubicfoot.value = val / 1728;
+            liter.value = val / 61.024;
+            milliliter.value = val * 16.387;
+        }
+        function literToOther(val) {
+            usliquidgallon.value = val / 3.785;
+            usliquidquart.value = val * 1.057;
+            usliquidpint.value = val * 2.113;
+            uslegalcup.value = val * 4.167;
+            fluidounce.value = val * 33.814;
+            cubicmeter.value = val / 1000;
+            cubicfoot.value = val / 28.317;
+            cubicinch.value = val * 61.024;
+            milliliter.value = val * 1000;
+        }
+        function milliliterToOther(val) {
+            usliquidgallon.value = val / 3785;
+            usliquidquart.value = val / 946.4;
+            usliquidpint.value = val / 473.2;
+            uslegalcup.value = val / 240;
+            fluidounce.value = val / 29.574;
+            cubicmeter.value = val / 1e+6;
+            cubicfoot.value = val / 28320;
+            cubicinch.value = val / 16.387;
+            liter.value = val / 1000;
+        }
+
+        function convertToOthers(convertfrom, value) {
+            switch (convertfrom) {
+                case "usliquidgallon": usliquidgallonToOther(parseFloat(value)); break;
+                case "usliquidquart": usliquidquartToOther(parseFloat(value)); break;
+                case "usliquidpint": usliquidpintToOther(parseFloat(value)); break;
+                case "uslegalcup": uslegalcupToOther(parseFloat(value)); break;
+                case "fluidounce": fluidounceToOther(parseFloat(value)); break;
+                case "cubicmeter": cubicmeterToOther(parseFloat(value)); break;
+                case "cubicfoot": cubicfootToOther(parseFloat(value)); break;
+                case "cubicinch": cubicinchToOther(parseFloat(value)); break;
+                case "liter": literToOther(parseFloat(value)); break;
+                case "milliliter": milliliterToOther(parseFloat(value)); break;
+
+            }
+        }
+
+    </script>
+</body>
+
+</html>

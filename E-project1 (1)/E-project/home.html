@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
+    body {
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .nav {
+        /* background-color: green; */
+        background-color: rgb(2, 2, 73);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+
+    }
+
+    .nav li a {
+        text-decoration: none;
+        color: white;
+        font-size: x-large;
+        margin: 0px 20px;
+        position: relative;
+    }
+
+    .nav ul {
+        display: flex;
+        list-style-type: none;
+    }
+
+    .nav h3 {
+        color: white;
+        font-weight: bold;
+        font-size: 40px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .nav a::after {
+        content: '';
+        left: 0%;
+        bottom: 0%;
+        height: 3px;
+        position: absolute;
+        width: 0%;
+        background-color: rgb(13, 114, 255);
+        transition: all ease-out 0.7s;
+        cursor: pointer;
+    }
+
+    .nav a:hover::after {
+        width: 100%;
+    }
+
+    .banner p {
+        background: linear-gradient(to right, rgb(2, 2, 73), rgb(13, 114, 255), white);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-size: 80px;
+        position: absolute;
+        margin-top: 11%;
+        font-weight: bold;
+        -webkit-text-stroke: 2px white;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        animation: gradient 3s linear infinite;
+
+    }
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 75%;
+        }
+
+        50% {
+            background-position: 100% 30%;
+        }
+
+        100% {
+            background-position: 0% 75%;
+        }
+    }
+
+    .nav2 ul {
+        display: flex;
+        margin: 20px;
+        /* background-color: antiquewhite; */
+        justify-content: center;
+        justify-content: space-evenly;
+        list-style-type: none;
+
+    }
+
+    .nav2 li a {
+        text-decoration: none;
+        color: black;
+        font-size: 30px;
+        background-color: rgb(13, 114, 255);
+        color: #fff;
+        padding: 2px 6px;
+        border-radius: 8px;
+        transition: all ease-out 0.5s;
+        cursor: pointer;
+    }
+
+    .nav2 li a:hover {
+        box-shadow: inset -3px -3px 7px rgb(233, 231, 231), inset 3px 3px 5px rgba(0, 0, 0, 0.502);
+        background-color: transparent;
+        color: black;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 40px;
+        margin: 10px;
+        /* color:rgb(2, 2, 73) ; */
+        text-decoration: underline;
+        text-decoration-thickness: 5px;
+        text-decoration-color: rgb(2, 2, 73);
+
+    }
+
+    h3 {
+        font-size: 25px;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-decoration-color: rgb(2, 2, 73);
+    }
+
+    .sec1 {
+        margin: 25px 45px;
+    }
+
+    .sec1 ul {
+        font-size: 20px;
+    }
+
+    h5 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+        font-size: 60px;
+        margin: auto;
+        font-weight: 600;
+        width: 80%;
+        border-radius: 30px 0px 30px 0px;
+        color: #fff;
+        background: linear-gradient(to top, rgb(2, 2, 73), rgb(13, 114, 255));
+    }
+
+    .about {
+        margin: auto;
+        width: 70%;
+        font-size: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: -3px -3px 7px rgb(203, 198, 198), 3px 3px 5px rgba(0, 0, 0, 0.676);
+    }
+
+    #history p {
+        width: 60%;
+        font-size: 20px;
+    }
+
+    #history h3 {
+        margin-top: 20px;
+    }
+
+    .footer {
+        background-color: rgb(2, 2, 73);
+        padding: 20px;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        /* margin-top: 20px; */
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <h3>Metric <span style="color: rgb(13, 114, 255); -webkit-text-stroke: 1px white; ">Converter</span></h3>
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="#parent">ABOUT</a></li>
+            <li><a href="chart.html">CHART</a></li>
+            <li><a href="#history">HISTORY</a></li>
+            <li><a href="#Articles">ARTICLES</a></li>
+            <li><a href="#FAQs">FAQs</a></li>
+        </ul>
+    </div>
+
+    
+    <div class="banner">
+        <center>
+            <p>
+                Metric conversion charts
+                and calculators for metric conversions
+            </p>
+        </center>
+
+        <img style="width: 100%; height: 75vh; "
+            src="get-your-measuring-tape-out-we-are-measuring-body-parts-image-credit-noicherrybeans-shutterstock-com-m.jpg"
+            alt="">
+
+    </div>
+    <br>
+    <div class="nav2">
+        <ul>
+            <li><a style="border-radius: 10px; background-color: transparent; color: black;
+                box-shadow: inset -3px -3px 7px rgb(203, 198, 198), inset 3px 3px 5px rgba(0, 0, 0, 0.676);"
+                    href="length.html">Length</a></li>
+            <li><a href="Area.html">Area</a></li>
+            <li><a href="Volume.html">Volume</a></li>
+            <li><a href="temperature.html">Temperature</a></li>
+            <li><a href="Mass.html">Mass</a></li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="container">
+        <h1 style="color: white;">Length Converter</h1>
+        <div class="inputcontainer">
+            <label for="meter">Meter <b>=</b></label>
+            <input type="number" id="meter" oninput="convertToOthers('meter',this.value)">
+        </div>
+        <div class="inputcontainer">
+            <label for="feet">Feet <b>=</b></label>
+            <input type="number" id="feet" oninput="convertToOthers('feet',this.value)">
+        </div>
+        <div class="inputcontainer">
+            <label for="inche">Inche <b>=</b></label>
+            <input type="number" id="inche" oninput="convertToOthers('inche',this.value)">
+        </div>
+        <div class="inputcontainer">
+            <label for="cm">Cm <b>=</b></label>
+            <input type="number" id="cm" oninput="convertToOthers('cm',this.value)">
+        </div>
+        <div class="inputcontainer">
+            <label for="yard">Yard <b>=</b></label>
+            <input type="number" id="yard" oninput="convertToOthers('yard',this.value)">
+        </div>
+        <div class="inputcontainer">
+            <label for="mile">Mile <b>=</b></label>
+            <input type="number" id="mile" oninput="convertToOthers('mile',this.value)">
+        </div>
+        <div class="inputcontainer">
+            <label for="km">Km <b>=</b></label>
+            <input type="number" id="km" oninput="convertToOthers('km',this.value)">
+        </div>
+
+    </div>
+    <br>
+    <div class="temp">
+        <p>Length units have ancient origins, with civilizations like the Egyptians using the cubit. The Romans
+            introduced the foot and the inch, influencing medieval Europe's systems. The metric system, with the meter
+            as its base, emerged during the French Revolution. In 1983, the meter was redefined based on the speed of
+            light. The International System of Units (SI) now serves as the global standard. Conversion tools evolved
+            from manual charts to digital calculators. Online tools further simplified length conversions, reflecting a
+            continuous human quest for standardized and efficient measurement systems.</p>
+    </div>
+    <br><br>
+    <div id="parent">
+        <h5>About Us</h5>
+        <br>
+        <div class="about">
+            <p> Welcome to MATRIC CONVERTER, your go-to destination for accurate and efficient metric conversions. We
+                understand
+                the significance of using metric units, especially in the realm of science and education. Our mission is
+                to
+                provide
+                a comprehensive metric converter that not only meets your conversion needs but also enhances your
+                understanding
+                of
+                the importance of standardized units in scientific projects.
+                The metric system originated in France in 1799 following the French Revolution although decimal units
+                had been used in many other countries and cultures previously. Although there have been many different
+                measurements and the definitions of the units have been revised, the official system of measurements of
+                most countries is the modern form of the metric system which is known as the "International System of
+                Units".
+
+                Since other systems of measurement are still used around the world, such as the United States and the
+                United Kingdom, this site aims to help people convert units of measurement with Metric Converter and
+                Metric Conversion Table and to better understand alternative measurements that they are unfamiliar with.
+                The measurement units are categorized into types (such as Temperature Conversion, Weight Conversion and
+                so on) seen on the right-hand side which then lead to a series of metric conversion calculators.
+
+                If you have a suggestion for new units to be added or suggestions on how to improve this site please
+                contact us by email.</p>
+        </div>
+
+        <h2>Our Commitment</h2>
+        <p style="font-size: xx-large; margin: 10px; text-align: center;">We are dedicated to offering a user-friendly
+            metric converter that covers a wide range of units across various
+            categories:</p>
+
+        <div class="sec1">
+            <h3>1. Length Conversion:</h3>
+            <ul>
+                <li> Inches to millimeters</li>
+                <li> Feet to meters</li>
+                <li> Yards to meters</li>
+                <li> Miles to kilometers</li>
+            </ul>
+            <div class="img">
+                <img style="position: absolute; margin-left: 45%; margin-top: -22px;" src="measurements-600x449.webp"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="sec1">
+            <h3>2. Area Conversion:</h3>
+            <ul>
+                <li> Square inches to square millimeters </li>
+                <li> Square feet to square meters </li>
+                <li> Square yards to square meters</li>
+                <li> Acres to hectares</li>
+                <li> Square miles to square kilometers </li>
+            </ul>
+        </div>
+
+        <div class="sec1">
+            <h3>3. Volume Conversion:</h3>
+            <ul>
+                <li> Fluid ounces to milliliters </li>
+                <li> Gallons to liters </li>
+                <li>Cubic feet to cubic meters </li>
+                <li> Cubic yards to cubic meters</li>
+            </ul>
+
+        </div>
+
+        <div class="sec1">
+            <h3>4. Mass Conversion:</h3>
+            </h3>
+            <ul>
+                <li> Ounces to grams </li>
+                <li> Pounds to kilograms </li>
+            </ul>
+        </div>
+
+        <div class="sec1">
+            <h3>5. Temperature Conversion:</h3>
+            <ul>
+                <li> Fahrenheit to Celsius</li>
+                <li> Celsius to Fahrenheit</li>
+            </ul>
+        </div>
+
+        <h2>Explore Our Pages</h2>
+        <p style="font-size: xx-large; margin: 10px; text-align: center;"> Navigate through our dedicated web pages for
+            each conversion type. Discover multiplying factors, conversion techniques, and essential information related
+            to each category. </p>
+        <br>
+        <div class="sec1">
+            <h3><b>1. Length Conversion:</b></h3> Explore the world of length measurements and understand the
+            multiplying factors
+            for
+            seamless
+            conversions.
+            <br><br>
+            <h3><b>2. Area Conversion:</b></h3> Dive into the realm of area measurements and learn the factors that
+            bridge the gap
+            between
+            different units.
+            <br><br>
+            <h3><b>3. Volume Conversion:</b></h3> Uncover the secrets of volume measurements and master the art of
+            converting
+            between
+            fluid
+            ounces,
+            gallons, and more.
+            <br><br>
+            <h3><b>4. Mass Conversion:</b></h3> Delve into the realm of mass measurements and gain insights into
+            converting ounces,
+            pounds,
+            and
+            short tons.
+            <br><br>
+            <h3><b>5. Temperature Conversion:</b></h3> Experience the world of temperature conversions between
+            Fahrenheit and
+            Celsius,
+            enhancing
+            your understanding of thermal scales.
+        </div>
+    </div>
+    <br>
+    <div id="Articles">
+        <h5>Articles</h5>
+        <p style="font-size: xx-large; margin: 10px; text-align: center;"> Expand your knowledge with our informative
+            articles:</p>
+        <br>
+        <div class="sec1">
+            <h3>1. The SI System:</h3> Understand the significance of the International System of Units.
+            <br><br>
+            <h3>2. Metric System:</h3> Explore the differences between various metric systems.
+            <br><br>
+            <h3>3. The Meter:</h3> Learn about the past and present definitions of the meter in the metric system.
+            <br><br>
+            <h3>4. Traditional U.S. Units:</h3> Gain insights into the traditional units of measurement used throughout
+            the
+            United States.
+            <br><br>
+        </div>
+    </div>
+    <div id="FAQs">
+        <h5>FAQs</h5>
+        <p style="font-size: xx-large; margin: 10px; text-align: center;">
+            Explore frequently asked questions (FAQs) like:
+        </p>
+        <br>
+        <div class="sec1">
+            <b style="font-size: 25px">How to enter numbers in Scientific Notation?</b>
+            <br><br>
+            <b style="font-size: 25px">Understanding knots and nautical miles.</b>
+            <br><br>
+            <b style="font-size: 25px">Converting rainfall between inches and millimeters.</b>
+            <br><br>
+            <b style="font-size: 25px">Differences between the long ton, short ton, and metric ton.</b>
+            <br><br>
+            <b style="font-size: 25px">Discover the temperature at which Celsius and Fahrenheit are the same.</b>
+            <br><br>
+        </div>
+    </div>
+    <div id="history">
+        <h5>Histroy Of Measurement Unit</h5>
+        <br>
+        <div class="sec1">
+            <h3>A. Area:</h3>
+            <p>
+                Ancient Beginnings: The concept of measuring area has ancient roots, with early civilizations employing
+                simple
+                methods such as counting square units. Ancient Egyptians used a primitive system for land measurement,
+                while
+                ancient Greeks, notably Euclid, introduced geometrical principles that laid the foundation for more
+                systematic
+                approaches to calculating area.
+            </p>
+            <br>
+            <p>
+                Unit Standardization: The metric system, established in the late 18th century, played a pivotal role in
+                standardizing units for area measurement. The square meter (m²) became the fundamental unit, providing a
+                globally recognized and decimal-based system.</p>
+            <br>
+            <h3>B. Length:</h3>
+            <p>
+                Cultural Origins: Length measurement traces back to various ancient cultures, each developing its units
+                based on
+                natural references or body parts. The Egyptians used cubits, the Greeks introduced the stadion, and the
+                Romans
+                contributed units like the mile.
+            </p>
+            <br>
+            <p>
+                Metric System Revolution: The metric system, initiated during the French Revolution, introduced the
+                meter (m) as
+                the standard unit for length. Defined initially by a fraction of the Earth's circumference, it provided
+                a
+                consistent and universally applicable measure.
+            </p>
+            <br>
+            <h3>C. Volume:</h3>
+            <p>
+                Early Practices: Ancient civilizations measured volume using containers, often shaped by practical needs
+                such as
+                storage and trade. Greeks like Archimedes made significant contributions to understanding the principles
+                of
+                fluid displacement.
+            </p>
+            <br>
+            <p>
+                Metric System Impact: The metric system further refined volume measurement with the cubic meter (m³) as
+                the
+                standard unit. Subunits like liters and milliliters became widely adopted, offering a decimal-based and
+                easily
+                convertible system.
+            </p>
+            <br>
+            <h3>D. Mass:</h3>
+            <p>
+                Ancient Scales: Mass measurement has ancient origins, with early societies using balances and scales.
+                Different
+                cultures had their systems of weights and measures, such as the shekel in ancient Mesopotamia.
+            </p>
+            <br>
+            <p>
+                Metric Standardization: The metric system, emerging in the late 18th century, introduced the kilogram
+                (kg) as
+                the standard unit for mass. Initially defined by a physical prototype, efforts continue to redefine the
+                kilogram
+                based on fundamental constants.
+            </p>
+            <br>
+            <h3>E. Temperature:</h3>
+            <p>
+                Diverse Scales: Temperature measurement has a diverse history with various scales developed over time.
+                Gabriel
+                Fahrenheit introduced the Fahrenheit scale in the early 18th century, and Anders Celsius proposed the
+                Celsius
+                scale.
+            </p>
+            <br>
+            <p>
+                Scientific Advancements: The Kelvin scale, based on absolute zero and fundamental physical constants,
+                was
+                established in the 19th century. It became the standard unit for temperature in the International System
+                of
+                Units (SI), providing a universal and absolute measure.
+            </p>
+            <br>
+            <p>
+                The historical development of these measurement units reflects the human quest for precision,
+                consistency, and
+                international collaboration in expressing and comparing quantities across different domains.
+            </p>
+            <br>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© Copyright - 2024 Matric Converter. All Rights Reserved
+        </p>
+    </div>
+
+</body>
+<script>
+    let feet = document.getElementById("feet")
+    let meter = document.getElementById("meter")
+    let inche = document.getElementById("inche")
+    let cm = document.getElementById("cm")
+    let yard = document.getElementById("yard")
+    let mile = document.getElementById("mile")
+    let km = document.getElementById("km")
+
+    function feetToOther(val) {
+        meter.value = val / 3.2808;
+        inche.value = val * 12;
+        cm.value = val / 0.032808;
+        yard.value = val * 3280.8;
+        mile.value = val * 0.00018939
+        km.value = val
+    }
+    function meterToOther(val) {
+        feet.value = val / 3.2808;
+        inche.value = val * 39.370;
+        cm.value = val / 0.01;
+        yard.value = val * 1.0936;
+        mile.value = val * 0.00062137;
+        km.value = val / 1000;
+    }
+    function incheToOther(val) {
+        feet.value = val * 0.083333;
+        meter.value = val / 39.370;
+        cm.value = val / 0.39370;
+        yard.value = val * 0.000015783;
+        mile.value = val * 0.000015783;
+        km.value = val / 39370
+    }
+    function cmToOther(val) {
+        feet.value = val * 0.032808;
+        meter.value = val / 100;
+        inche.value = val * 0.39370;
+        yard.value = val * 0.010936;
+        mile.value = val * 0.000062137;
+        km.value = val / 100000;
+    }
+    function yardToOther(val) {
+        feet.value = val * 3;
+        meter.value = val / 1.0936;
+        cm.value = val / 0.010936;
+        inche.value = val * 36;
+        mile.value = val * 0.00056818;
+        km.value = val / 1093.6
+
+    }
+    function kmToOther(val) {
+        feet.value = val * 3280.8;
+        meter.value = val * 1000;
+        cm.value = val * 100000;
+        inche.value = val * 39370;
+        mile.value = val * 0.062137;
+        yard.value = val * 1093.6;
+
+    }
+    function mileToOther(val) {
+        feet.value = val * 5280;
+        meter.value = val * 0.00062137;
+        cm.value = val / 0.0000062137;
+        inche.value = val * 63360;
+        km.value = val * 0.62137;
+        yard.value = val * 1760;
+
+    }
+    function convertToOthers(convertfrom, value) {
+        switch (convertfrom) {
+            case "feet": feetToOther(parseFloat(value)); break;
+            case "meter": meterToOther(parseFloat(value)); break;
+            case "inche": incheToOther(parseFloat(value)); break;
+            case "cm": cmToOther(parseFloat(value)); break;
+            case "yard": yardToOther(parseFloat(value)); break;
+            case "mile": mileToOther(parseFloat(value)); break;
+            case "km": kmToOther(parseFloat(value)); break;
+        }
+    }
+</script>
+
+</html>

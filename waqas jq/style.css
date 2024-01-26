@@ -1,0 +1,19 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+input {
+    filter: drop-shadow(5px 5px 15px rgb(230, 178, 178));
+    margin: 5px;
+}
+
+.container {
+    border: 5px solid black;
+}
+
+#submit {
+    margin-left: 600px;
+    padding: 5px;
+}
